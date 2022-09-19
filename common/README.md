@@ -7,12 +7,7 @@ This repo contains all of the collaborative report sections. These sections are 
 This repo contains a folder called common. This folder contains all of the common sections.
 
 ## Inclusion in Your Report
-
-If you are using git for version controlling your report, including this content is quite easy. In the terminal, simply navigate to the directory that contains your report and type.
-
-git clone #URL common
-
-you will then have a folder called common (Unless you specified another name when you cloned the repo).
+The .tex files that are contained within the common folder can be included using `\input{<filename>}`
 
 Input the sections in the report using \input{path/to/file}
 
@@ -24,7 +19,7 @@ Input the sections in the report using \input{path/to/file}
 4. Copy the command.
 5. In the terminal, navigate to some location where you can clone your project
 
-   (could be `C:\\repos\`, but that is up to you.)
+   (could be `C:\repos\`, but that is up to you.)
 
 6. Paste the command and remember to give your project a recoginizable name.
    ``` bash
@@ -35,13 +30,13 @@ Input the sections in the report using \input{path/to/file}
 7. In the terminal, cd into your project folder (cd p5-project)
 8. add the common repo as a remote for your repo
    ``` bash
-   git remote add -f common #URL
+   git remote add -f common https://github.com/Ecdar-SW5/report-common.git
    ```
    and then:
    ``` bash
    git merge common/master --allow-unrelated-histories
    ```
-   if you forgot to write `-f` when you added the remote you need to fetch before you merge.
+   Note: if you forgot to write `-f` when you added the remote you need to fetch before you merge.
 
 9. Finally, to push your changes back to overleaf, just use git to push.
 
@@ -61,7 +56,6 @@ And finally,
 ``` bash
 git push origin
 ```
-
 
 ### Why don't I just download the source files off GitHub and include them manually?
 
