@@ -7,9 +7,9 @@ This repo contains all of the collaborative report sections. These sections are 
 This repo contains a folder called common. This folder contains all of the common sections.
 
 ## Inclusion in Your Report
-The .tex files that are contained within the common folder can be included using `\input{<filename>}`
+We recommend using git to syncronize. This section will guide you to set up a workflow.
 
-Input the sections in the report using \input{path/to/file}
+The .tex files that are contained within the common folder can be included using `\input{<filename>}`
 
 ### If you are using overleaf for your project
 
