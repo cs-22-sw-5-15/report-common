@@ -34,7 +34,7 @@ The .tex files that are contained within the common folder can be included using
    ```
    and then:
    ``` bash
-   git merge common/master --allow-unrelated-histories
+   git merge common/main --allow-unrelated-histories
    ```
    Note: if you forgot to write `-f` when you added the remote you need to fetch before you merge.
 
@@ -50,7 +50,7 @@ git pull origin/master
 ```
 Then pull common
 ``` bash
-git pull common/master
+git pull common/main
 ```
 And finally,
 ``` bash
