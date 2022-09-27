@@ -1,0 +1,51 @@
+\section{Introduction to ECDAR}
+\textit{The following sections have been written in collaboration with other ECDAR
+project groups.}
+
+This section serves as an overview over the different concepts of ECDAR to provide a basic understanding of what ECDAR is, the purpose of ECDAR and the architecture and technologies behind it.
+
+% \subsection{What is ECDAR}
+% ECDAR is a graphical tool to model real time systems using timed input/output automatas, and analyse these systems. 
+% ECDAR stands for \textbf{E}nvironment for \textbf{C}ompositional \textbf{D}esign and \textbf{A}nalysis of \textbf{R}eal Time Systems.
+
+\subsection{Purpose}
+ECDAR is a graphical tool to model real-timed systems using timed input/output automata, and analyse these systems. 
+ECDAR stands for \textbf{E}nvironment for \textbf{C}ompositional \textbf{D}esign and \textbf{A}nalysis of \textbf{R}eal Time Systems.
+
+Imagine you are working for a space program, and want to send a satellite into space.
+You spent several months testing the system to make sure the model is correct and everything is working as intended.
+The satellite finally gets launched into space, but a day after you find a major issue in the system.
+The satellite is already in space, and you can simply not just update it, like you usually would with other system. \label{ECDAR:satellite}
+% This is why ECDAR, as a tool, becomes great.
+
+ECDAR was based on the tedious process of model checking the correctness of a real-timed system, if it were to be done by hand, this also minimizes the errors during the process of model checking.
+As previously mentioned in the satellite example, by testing a system you end up spending a lot of time ensuring functionality and testing the model of the system, but it is also error prone.
+ECDAR wishes to optimize this problem, where you can model the different automatans and states by hand, which can then generate the many different outcomes of the given specification, see \ref{fig:ECDAR-gui} for current GUI.
+
+Model checking is a way of checking, if a model is true to a given specification.
+This is usually associated with hardware or systems that have a liveness, since it needs to be checked if the life cycle is valid.
+Also there needs to be certain safety requirements, to ensure that there are no crashes or other obstacles throughout the life cycle.
+
+It is important to model check a system to ensure, that it behaves like intended.
+Take for instance, the satellite example, it is a very complex hardware/system with a lot of functionality.
+The satellite itself has several components, which are dependent on each other.
+If one of these components fail or are blocked, then it can make the entire satellite faulty.
+
+By providing a tool that can both be reliable and productive at testing if a new system is true to a given specification, we can not only ensure that time will be saved, but also the correctness of the system.
+It does need to be noted, that there are still some issues with using ECDAR as a tool for model checking.
+ECDAR can try to guide the user as much as possible to make sure the specification is valid, but in the end the user can still make a wrong specification.
+%Also how efficient ECDAR is as a tool is dependent on what kind of algorithms are used, and the efficiency of the run-time.
+
+%%ECDAR therefore tests the correctness of the model using timed I/O automata.
+%% It parallelizes test-case generation and test execution to provide this significant speed-up.
+
+To sum up, what the purpose of ECDAR is:
+\begin{quote}
+"...Ecdar that integrates conformance testing into a new IDE that now features
+modelling, verification, and testing. The new tool uses model-based mutation testing, requiring only
+the model and the system under test, to locate faults and to prove the absence of certain types of faults." \cite{Gundersen_2018}
+\end{quote}
+
+%% Satelit eksempel
+
+
