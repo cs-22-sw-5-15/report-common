@@ -1,4 +1,4 @@
-    \documentclass[a4paper]{report}
+\documentclass[a4paper]{report}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
@@ -7,14 +7,15 @@
 
 \begin{document}
 \tableofcontents
-\input{common/Intro-ECDAR/Intro-ECDAR}
-\input{common/Intro-ECDAR/Purpose}
-\input{common/Intro-ECDAR/ECDAR_State}
-\input{common/Intro-ECDAR/Architecture}
-%\input{common/Intro-ECDAR/Technologies}
 
-\input{common/Scrum/Scrum-Intro}
-\input{common/Scrum/Agile-Cooperation}
+\input{common/ecdar/ecdar}
+\input{common/ecdar/architecture}
+\input{common/ecdar/state}
+
+\input{common/agile/agile}
+\input{common/agile/scrum}
+\input{common/collaboration/collaboration}
+
 
 \bibliography{common/common}
 \end{document}
