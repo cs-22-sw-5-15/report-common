@@ -46,11 +46,11 @@ Just skip to step 8 in the section above 😉
 ### Updating the common sections.
 Using git, first make sure that you pull origin
 ``` bash
-git pull origin/master
+git pull origin master
 ```
 Then pull common
 ``` bash
-git pull common/main
+git pull common main
 ```
 And finally,
 ``` bash
