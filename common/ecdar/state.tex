@@ -1,6 +1,5 @@
-\subsection{The current state of ECDAR} %This was written quite fastly ;)
-To further illustrate what ECDAR is, and how far its been developed. 
-We will go through the tool in this section, a screenshot of which can be found in Figure \ref{fig:ECDAR-gui}. 
+\subsection{The current state of ECDAR}\label{sub:the-current-state-of-ecdar} %This was written quite fastly ;)
+To further illustrate what ECDAR is, and how far its been developed; we will go through the tool in this section, a screenshot of which can be found in Figure \ref{fig:ECDAR-gui}. 
 The version of ECDAR displayed and described here is ECDAR version 2.3.3 from 2022-09-08 downloaded from \href{https://www.ecdar.net/download/}{www.ecdar.net/download/}.
 
 \begin{figure}[H]
@@ -11,16 +10,16 @@ The version of ECDAR displayed and described here is ECDAR version 2.3.3 from 20
 \end{figure}
 The top bar of the GUI should be with the five tabs should be pretty self explanatory as it is similar to most "similar programs"/"file editors".
 An interesting thing to mention is when opening a project under the \textit{File} tab.
-An excisting project is opened by selecting the folder containing two \textit{.json} files: "Queries" and "GlobalDeclarations".
+An existing project is opened by selecting the folder containing two \textit{.json} files: "Queries" and "GlobalDeclarations".
 It is not trivial to select a folder to open a project, and neither is it explained in the GUI.
-% The top bar of the GUI has five tabs, the leftmost being \textit{File}, this is used to open, save and create new projects. 
-% The other tabs are self explanatory.
+
 Positioned right underneath the \textit{Help} tab are the two buttons for creating new models and new specifications under the same project.
 
 The panel on the left contains an overview of the components and specifications. 
 In this panel the component \textit{Machine2} is selected which is displayed in the middle of the GUI.
 ECDAR allows the user to create a type of automata called \textbf{T}imed \textbf{I}nput \textbf{O}utput \textbf{A}utomata. 
-This automaton takes \texttt{coin} as input, since the arrow is solid, and the automaton outputs \texttt{cof} and \texttt{tea}, as shown by the dashed arrows on the left side of the automaton.
+The automaton shown in \autoref{fig:ECDAR-gui} models a coffee machine.
+It takes \texttt{coin} as input, since the arrow is solid, and the automaton outputs \texttt{cof} and \texttt{tea}, as shown by the dashed arrows on the left side of the automaton.
 Inside the red box the \texttt{L11} location is marked as the start state, which is indicated by the circle.
 A solid arrow through a small circle with a question mark represent an output. 
 Likewise, if the arrow is dashed and the small circle contains an exclamation mark, it represents an input.

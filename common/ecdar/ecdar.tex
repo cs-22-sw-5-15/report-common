@@ -1,4 +1,4 @@
-\section{Introduction to ECDAR}
+\section{Introduction to ECDAR}\label{sec:introduction-to-ecdar}
 \textit{The following sections have been written in collaboration with other ECDAR
 project groups.}
 
@@ -8,25 +8,29 @@ This section serves as an overview over the different concepts of ECDAR to provi
 % ECDAR is a graphical tool to model real time systems using timed input/output automatas, and analyse these systems. 
 % ECDAR stands for \textbf{E}nvironment for \textbf{C}ompositional \textbf{D}esign and \textbf{A}nalysis of \textbf{R}eal Time Systems.
 
-\subsection{Purpose}
-ECDAR is a graphical tool to model real-timed systems using timed input/output automata, and analyse these systems. 
+\subsection{Purpose}\label{sub:purpose}
 ECDAR stands for \textbf{E}nvironment for \textbf{C}ompositional \textbf{D}esign and \textbf{A}nalysis of \textbf{R}eal Time Systems.
+ECDAR is a graphical tool to model real-timed systems using timed input/output automata, and analyse these systems. 
 
+What ECDAR is useful for is best described by an example:
 Imagine you are working for a space program, and want to send a satellite into space.
 You spent several months testing the system to make sure the model is correct and everything is working as intended.
 The satellite finally gets launched into space, but a day after you find a major issue in the system.
 The satellite is already in space, and you can simply not just update it, like you usually would with other system. \label{ECDAR:satellite}
+This is why ECDAR is a useful tool to model check systems, to make sure that a systems components works together as expected.
 % This is why ECDAR, as a tool, becomes great.
 
-ECDAR was based on the tedious process of model checking the correctness of a real-timed system, if it were to be done by hand, this also minimizes the errors during the process of model checking.
-As previously mentioned in the satellite example, by testing a system you end up spending a lot of time ensuring functionality and testing the model of the system, but it is also error prone.
-ECDAR wishes to optimize this problem, where you can model the different automatans and states by hand, which can then generate the many different outcomes of the given specification, see \ref{fig:ECDAR-gui} for current GUI.
+%ECDAR was based on the tedious process of model checking the correctness of a real-time system, if it were to be done by hand, this also minimizes the errors during the process of model checking.
+%As previously mentioned in the satellite example, by testing a system you end up spending a lot of time ensuring functionality and testing the model of the system, but it is also error prone.
+%ECDAR wishes to optimize this problem, where you can model the different automata and states by hand, which can then generate the many different outcomes of the given specification, see \ref{fig:ECDAR-gui} for current GUI.
+
+Ecdar is based on the concept of model checking, which is a method of verifying systems, usually big systems. Big systems can be very tedious 
 
 Model checking is a way of checking, if a model is true to a given specification.
 This is usually associated with hardware or systems that have a liveness, since it needs to be checked if the life cycle is valid.
-Also there needs to be certain safety requirements, to ensure that there are no crashes or other obstacles throughout the life cycle.
+There also needs to be certain safety requirements to ensure that there are no crashes or other obstacles throughout the life cycle.
 
-It is important to model check a system to ensure, that it behaves like intended.
+It is important to model check a system to ensure that it behaves like intended.
 Take for instance, the satellite example, it is a very complex hardware/system with a lot of functionality.
 The satellite itself has several components, which are dependent on each other.
 If one of these components fail or are blocked, then it can make the entire satellite faulty.
@@ -46,6 +50,5 @@ modelling, verification, and testing. The new tool uses model-based mutation tes
 the model and the system under test, to locate faults and to prove the absence of certain types of faults." \cite{Gundersen_2018}
 \end{quote}
 
-%% Satelit eksempel
 
 
