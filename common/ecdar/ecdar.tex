@@ -26,13 +26,13 @@ This is usually associated with hardware or systems that have a liveness, since 
 There is also a need for certain safety requirements to ensure that there are no crashes or other obstacles throughout the life cycle.
 
 It is important to model check a system to ensure that it behaves as intended.
-Take for instance the satellite example, it is a very complex hardware/system with a lot of functionality.
-The satellite itself has several components, which are dependent on each other.
-%In the above example with the faulty satellite, there are several, interdependent components.
+In the above example with the faulty satellite, there are several, interdependent components.
 If one of these components fail or are blocked, then it makes the entire satellite faulty.
+% Take for instance the satellite example, it is a very complex hardware/system with a lot of functionality.
+% The satellite itself has several components, which are dependent on each other.
 
-By providing a tool that can both be reliable and productive at testing if a new system is true to a given specification, we can not only ensure the correctness of a system, but also that time will be saved.
-% ... we can not only ensure correctness but also efficiency.
+By providing a tool that can both be reliable and productive at testing if a new system is true to a given specification, we can not only ensure correctness but also efficiency.
+
 It does need to be noted that there still are some issues with using ECDAR as a tool for model checking.
 ECDAR can try to guide the user as much as possible to make sure the specification is valid, but in the end, the user can still make a wrong specification.
 %Also how efficient ECDAR is as a tool is dependent on what kind of algorithms are used, and the efficiency of the run-time.

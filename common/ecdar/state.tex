@@ -16,17 +16,18 @@ An existing project is opened by selecting the folder containing three folders w
 
 %\subsubsection{The component panel}
 The panel on the left of \autoref{fig:ECDAR-gui} contains an overview of the components and specifications. 
-Positioned at the top of this tab, to the right of text sayin: "Project", are the two buttons for creating new models and new specifications under the currently opened project.
-ECDAR allows the user to create a type of automata called \textbf{T}imed \textbf{I}nput \textbf{O}utput \textbf{A}utomata. 
-In the left panel the component \textit{Machine2} is selected which is displayed in the middle of the GUI, which is an automaton, which models a coffee machine.
+Positioned at the top of this tab, to the right of "Project"-text box, are the two buttons for creating new models and new specifications under the currently opened project.
+ECDAR allows the user to create a type of automaton called \textbf{T}imed \textbf{I}nput \textbf{O}utput \textbf{A}utomata. 
+In the left panel, the component \textit{Machine2} is selected, which is displayed in the middle of the GUI.
+This example is of an automaton that models a coffee machine.
 It takes \texttt{coin} as input, since the arrow is solid, and the automaton outputs \texttt{cof} and \texttt{tea}, as shown by the dashed arrows on the left side of the automaton.
-Inside the red box the \texttt{L11} location is marked as the start state, which is indicated by the circle.
+Inside the red box, the \texttt{L11} location is marked as the start state, which is indicated by the circle.
 A solid arrow through a small circle with a question mark represent an output. 
 Likewise, if the arrow is dashed and the small circle contains an exclamation mark, it represents an input.
 This concludes the possibilities regarding input and output.
 
-Figure \ref{fig:ECDAR-guard} contains an automaton which uses time as well as input and output.
-This is done by using a clock, which is represented as the variable y.
+\autoref{fig:ECDAR-guard} contains an automaton which uses time as well as input and output.
+This is done by using a clock, represented as the variable y.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{common/figures/ecdar-guards.jpg}
@@ -34,13 +35,13 @@ This is done by using a clock, which is represented as the variable y.
     \label{fig:ECDAR-guard}
 \end{figure}
 
-The transition with the small circle containing the assignment is an \textit{update}, which resets the clock.
-The small circle containing a less than sign is a \textit{guard}, which can be thought of as a restriction, which must be satisfied in order to take this action/transition.
-Finally the \texttt{L4} location contains an \textit{invariant} \texttt{y<=6}, which must be satisfied. 
-In this case it means the automaton cannot be in the location, if the clock value exceeds the value 6.
+The transition with the small circle containing the assignment is an \textit{update} that resets the clock.
+The small circle containing a "$>=$"-sign is a \textit{guard}, which can be thought of as a restriction that must be satisfied in order to take this action/transition.
+Finally the \texttt{L4}-location contains an \textit{invariant} \texttt{y<=6}, which must be satisfied. 
+In this case, it means the automaton cannot be in the location if the clock value exceeds the value of 6.
 
 The rightmost panel displays the queries to be performed. 
-Queries are sent to an engine, which can be selected in the drop-down menu, one of which can be seen in the bottom-right corner of Figure \ref{fig:ECDAR-queries-panel}. 
+Queries are sent to an engine, which can be selected in the drop-down menu, one of which can be seen in the bottom-right corner of \autoref{fig:ECDAR-queries-panel}. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{common/figures/right-panel.png}
@@ -51,9 +52,9 @@ To send the queries to be checked, the button with the ``play'' icon must be pre
 Afterwards the result can be viewed on the left side of the panel in the form of an icon and a color. 
 The result of the query in the top of \autoref{fig:ECDAR-queries-panel} is an error, which means the engine could not perform the query. 
 An error message can be seen by placing the mouse over the icon, which can be used to troubleshoot why this error occurred.
-The ``Machine$<=$Spec'' query was performed but the result was false, which means the \texttt{Machine} model does not refine the specification named \texttt{Spec}, which is illustrated by the red color and a cross.
+The "Machine$<=$Spec" query was performed, but the result was false, which means the \texttt{Machine} model does not refine the specification named \texttt{Spec}, as illustrated by the red color and a cross.
 The rest of the queries were performed without errors, and all proved true. 
-The fields with text use a special syntax to specify a combination of models, operators, and specifications to be checked.
+The text boxes use a special syntax to specify a combination of models, operators, and specifications to be checked.
 
 \begin{figure}[H]
     \centering
@@ -62,6 +63,7 @@ The fields with text use a special syntax to specify a combination of models, op
     \label{fig:ECDAR-query-types}
 \end{figure}
 
-The type of the query to be performed however is chosen in the drop-down menu underneath the icons. 
+The type of the query to be performed is chosen in the drop-down menu underneath the icons. 
 The drop-down menu with the types of queries that can be chosen, can be seen in \autoref{fig:ECDAR-query-types}.
+
 
