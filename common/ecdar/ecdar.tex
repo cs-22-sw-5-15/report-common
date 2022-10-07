@@ -1,5 +1,5 @@
 \section{Introduction to ECDAR}\label{sec:introduction-to-ecdar}
-\textit{The following section and its subsections are written in collaboration with other ECDAR project groups.}\vspace{1em}
+\commondisclaimer
 
 This section serves as an overview over the different concepts of ECDAR to provide a basic understanding of what ECDAR is, the purpose of ECDAR, its architecture, technologies behind it, and what state ECDAR is currently in.
 
@@ -10,7 +10,7 @@ This process is called model checking. Ecdars website can be found on \href{http
 %what
 Model checking is a method of verifying that models in the form of finite-state automata are correct \cite{modelchecking-handbook}. A model is defined as one or more components, but a component is also a model.
 The bigger a model becomes, the harder it becomes to verify it. 
-Having computer-aided checking ensures that all edge cases are checked, where one can be forgotten if done by hand.
+Having computer-aided checking ensures that all edge cases are checked, where one can be forgotten if done manually.
  
 %why
 The importance of a tool like ECDAR is best described by an example:
@@ -19,9 +19,9 @@ You spent several months testing the model for the satellite to make sure it is 
 The day after launch, a major problem in the system is found. However since the satellite is already in space, it is not possible to just update it as easily as other systems. If instead a tool like ECDAR had been used, the issue would have been identified before the satellite was launched, thereby allowing the engineers to solve the problem.
 This is why ECDAR is a useful tool to model check systems, to verify that a model's components works together as expected.
 
-Model checking is a way of checking if a model is true to a given specification.
-This is usually associated with hardware or systems that have a liveness, since validity of the life cycle needs checking.
-There is also a need for certain safety requirements to ensure that there are no crashes or other obstacles throughout the life cycle.
+
+%Model checking is usually associated with real time hardware or systems, since validity of the life cycle needs checking.
+%There is also a need for certain safety requirements to ensure that there are no crashes or other obstacles throughout the life cycle.
 
 It is important to model check a system to ensure that it behaves as intended.
 In the above example with the faulty satellite, there are several interdependent components.
