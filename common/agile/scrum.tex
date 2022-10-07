@@ -1,85 +1,90 @@
-\subsection{Scrum}\label{sub:scrum}
-Scrum is an agile framework that developers use to ensure a development process where "Commitment, Focus, Openness, Respect, and Courage" is valued and practiced \cite{schwaber_sutherland_2022}. Scrum is not an acronym, but rather, according to the Oxford English Dictionary, a rugby term that describes a situation where "... the forwards from each team pack together, heads down and arms interlocked, and push against the opposing forwards in order to gain possession of the ball ..." \cite{oedscrum}.
-For development, this translates to a working framework where each "player" advances together as a team. 
-For this reason, an important aspect of scrum is to assign roles to each "player".
+\subsection{Scrum} \label{sub:scrum}
+Scrum is an agile framework that developers use to ensure a development process where \emph{Commitment, Focus, Openness, Respect, and Courage} is valued and practiced \cite{schwaber_sutherland_2022}. 
+This subsection is heavy on the theory behind Scrum, so as to introduce the concept to the reader.
+In subsequent chapters, the usage of Scrum for this particular project will be made clear.
+
+%Scrum is a rugby term that describes a situation where \say{...the forwards from each team pack together, heads down and arms interlocked, and push against the opposing forwards in order to gain possession of the ball ...} \cite{oedscrum}.
+%For development, this translates to a working framework where all \say{players} advances together as a team. 
+%For this reason, an important aspect of Scrum is to assign roles to each \say{player}.
 
 % Roles
 \subsubsection{Roles}
-The scrum framework describes a team that includes a \emph{Scrum Master}, a \emph{Product Owner}, and \emph{Developers}. 
-These roles, described below, are all equally vital. 
-Scrum does not define a hierarchy. 
+The Scrum framework describes a team that consists of a \emph{Scrum Master}, a \emph{Product Owner}, and \emph{Developers}. 
+These roles, described below, are all equally vital, and are not positioned in a hierarchy. 
 Instead, everyone on the team is responsible for playing their part in the development and ensuring that working software is delivered. 
-Scrum is based on having a small and nimble team that is still large enough to make significant progress during each sprint. 
+Scrum is based on having a small and nimble team that is still large enough to make significant progress during each sprint.
 These teams should typically be less than 10 people \cite{schwaber_sutherland_2022}.
 
 \paragraph{The Product Owner}
-is responsible for maximizing the value created by the scrum teams. 
-It is also the product owner's responsibility to manage the \emph{product backlog} and communicating what the product goal is \cite{schwaber_sutherland_2022}. 
-The product backlog is an ordered list of the work that needs to be done \cite{schwaber_sutherland_2022}.
+is responsible for maximizing the value created by the Scrum teams. 
+It is also the Product Owner's responsibility to manage the \emph{Product Backlog} as well as developing and communicating what the \emph{Product Goal} is \cite{schwaber_sutherland_2022}. 
 
 \paragraph{The Scrum Master}
-is responsible for making sure the team is focused on reaching the goal and maintaining an environment where the scrum values are upheld. 
-The scrum master is not a manager but a developer on equal terms with the rest of the team \cite{schwaber_sutherland_2022}.
-
+is responsible for making sure the team is focused on reaching the goal and maintaining an environment where the Scrum values are upheld. This includes ensuring that the team follows the Scrum framework, removing obstacles for the team as well as facilitating the different Scrum events.
+The Scrum master is not a manager, but a member of the team and is on equal terms with the rest of the team \cite{schwaber_sutherland_2022}.
+ 
 \paragraph{The Developers}
 make up the rest of the team members.
 The developers are accountable for creating usable \emph{Increments} during the \emph{Sprint}. 
-An increment is a tangible step towards the product goal, which meets the definition of done. 
-Developers take part in creating the sprint backlog, ensuring that increments adhere to the definition of done and adapting their daily plan in accordance with the current sprint goal \cite{schwaber_sutherland_2022}.
-We will go over what definition of done is in \autoref{par:definition-of-done}.
+An Increment is a tangible step towards the \emph{Product Goal}, which meets the Definition of Done. 
+Developers take part in creating the \emph{Sprint Backlog}, ensuring that \emph{Increments} adhere to the Definition of Done and adapting their daily plan in accordance with the current \emph{Sprint Goal} \cite{schwaber_sutherland_2022}.
+The Definition of Done is described in \autoref{par:definition-of-done}.
 
 \subsubsection{Scrum Artifacts}
-The product backlog is one of the three artifacts in scrum, where the progress of the Product Backlog is compared to the product goal.
-It is an ordered list that indicates which components needs to be improved.
-The list is used to delegate assignments between the scrum groups for the upcoming sprint.
-Refinement of the Product Backlog is a breakdown of the list, where the items are further defined into smaller and more precise items.
-This is an ongoing event throughout the different sprints, slowly specifying and clarifying the product backlog \cite{schwaber_sutherland_2022}. 
+The \emph{Product Backlog} is one of the three artifacts in Scrum, where the progress of the \emph{Product Backlog} is compared to the \emph{Product Goal}.
+The product goal (also known as \say{commitment}) is a description of a future state for the product, typically its final form.
+It is an ordered list that indicates which components of the product need to be improved as well as which definitions of features need to be made.
+The list is used to delegate assignments between the Scrum groups for the upcoming \emph{Sprint}.
+\emph{Refinement} of the \emph{Product Backlog} is a breakdown of the list, where the items are further defined into smaller and more precise items.
+This is an ongoing event throughout the different \emph{Sprints}, slowly specifying and clarifying the \emph{Product Backlog} \cite{schwaber_sutherland_2022}. 
 
-The second artifact is the Sprint Backlog. 
-This artifact is the set of Product Backlog items the scrum team has selected for the sprint. 
-This list of items from the Product Backlog is planned by and for the developers in the scrum teams. 
-Throughout the sprint the Sprint Backlog is updated each time the scrum group have learned something new \cite{schwaber_sutherland_2022}. 
+The second artifact is the \emph{Sprint Backlog}. 
+This artifact is the set of \emph{Product Backlog} items the Scrum team has selected for the \emph{Sprint}. 
+This list of items from the \emph{Product Backlog} is planned by and for the developers in the Scrum teams. 
+Throughout the \emph{Sprint} the \emph{Sprint Backlog} is updated first during the during \emph{Sprint planning} and throughout the \emph{Sprint} and each time the Scrum team gains new knowledge about the problem or discover new issues \cite{schwaber_sutherland_2022}. 
 
-The increment is the third and last artifact in Scrum, and it is a concrete stepping stone towards the product goal.
-Every increment is thoroughly verified to ensure that all the increments work together, as each increment is an additive to the prior increments completed by the scrum teams.
+The \emph{Increment} is the third and last artifact in Scrum, and it is a concrete stepping stone towards the \emph{Product Goal}.
+An increment is created once a task from the product backlog meets the DoD. 
+Every increment is thoroughly verified to ensure that all them work together, as each of them is an additive to the prior ones completed by the Scrum teams.
 It is possible that multiple increments are created within a sprint.
-An increment cannot be considered work if it does not uphold the criterion in the Definition of Done \cite{schwaber_sutherland_2022}.
+An increment cannot be considered done if it does not uphold the criteria in the DoD\cite{schwaber_sutherland_2022}.
 
-\paragraph{Definition of Done}\label{par:definition-of-done}
-describes when an increment meets the requirements of the product.
-The Definition of Done, or for short DoD, creates a shared transparency for the understanding of what have been completed as an increment.
+\paragraph{Definition of Done} \label{par:definition-of-done}
+is a shared definition for when an \emph{Increment} meets the quality standards of the product and thereby describes when an \emph{Increment} is created.
+This happens when an item from the backlog meets the definition.
+The DoD, creates a shared transparency for the understanding of what have been completed as an \emph{Increment}.
 When multiple Scrum teams works together, a mutual DoD must be defined \cite{schwaber_sutherland_2022}.
-
-
 % Events
 \subsubsection{Scrum Events}
-The Scrum framework contains 5 events. 
-These events are designed to enable transparency and create opportunities for course correction  \cite{schwaber_sutherland_2022}.
+The Scrum framework contains five events. 
+These events are designed to enable transparency and create opportunities for course correction \cite{schwaber_sutherland_2022}.
 
 \paragraph{The Sprint}
 is a fixed length event, typically a month or less.
 This event is where value is created. 
-During the sprint, items from the sprint backlog are turned into increments by the developers \cite{schwaber_sutherland_2022}.
+During the \emph{Sprint}, items from the \emph{Sprint Backlog} are turned into \emph{Increments} by the developers \cite{schwaber_sutherland_2022}.
+The following events happen during a sprint and are done in the order they are described. 
 
 \paragraph{Sprint Planning}
-is the process where the Scrum team creates a plan for the sprint. 
+is the process where the Scrum team creates a plan for the sprint.
 The plan should specify three things. 
 Firstly, the plan should address why the sprint is valuable to the development of the product. 
-Secondly, it should address which items from the product backlog will be added to the Sprint Backlog. 
-The sprint backlog is the set of product backlog items the scrum team has selected for the sprint. 
+Secondly, it should address which items from the product backlog will be added to the sprint backlog. 
+The sprint backlog is the set of product backlog items the Scrum team has selected for the sprint. However depending on the product backlog, the selected items may need to undergo refinement before they can be turned into suitable tasks for the sprint backlog. 
 Finally, the team should discuss how they will approach each backlog item and ensure that it will meet the DoD \cite{schwaber_sutherland_2022}.
 
-
 \paragraph{Daily Scrum}
-is a short meeting that is completed each day, where the progress is inspected.
-This event improves the group members communication skills, helps identify challenges, and creates an opportunity for the team to share knowledge.
-The Daily Scrum is also used to adapt or re-plan the work of the ongoing sprint \cite{schwaber_sutherland_2022}.
+is a short meeting that is held each day, where the progress is inspected via a \say{three-question round} to clarify what each participant did the previous day, what they plan on doing this day, and whether there are any challenges to completing the day's work.
+The goal of this event is to improve the group members' communication skills, helps identify challenges, and creates an opportunity for the team to share knowledge.
+The daily scrum is also used to adapt or re-plan the work of the ongoing sprint \cite{schwaber_sutherland_2022}.
 
 \paragraph{Sprint Review}
 is the second to last event before a new sprint begins.
-Its purpose is to inspect the outcome of the sprint to adjust the Product Backlog accordingly \cite{schwaber_sutherland_2022}.
+Its purpose is to inspect the outcome of the sprint to adjust the product backlog accordingly \cite{schwaber_sutherland_2022}.
+Everyone involved with the project can participate in the sprint review (product owner, scrum master, developers, even customers, management and relevant developers from other projects).
 
 \paragraph{Sprint Retrospective}
-is the last event in the sprint before a new sprint begins. 
-In a Sprint Retrospective, the team discusses how the processes and interactions during the sprint helped or hindered the development process. 
-Then, the team will discuss how it can improve its effectiveness and the quality of the outcome in the sprint to come \cite{schwaber_sutherland_2022}.
+is the last event in the Sprint before a new sprint begins.
+In a Sprint Retrospective, the team discusses how the processes and interactions during the Sprint helped or hindered the development process. 
+Then, the team will discuss how it can improve its effectiveness and the quality of the outcome in the Sprint to come \cite{schwaber_sutherland_2022}.
+The retrospective differs from the review in its focus; the retrospective (ideally) improves the work process moving forward, the review (ideally) improves the product.

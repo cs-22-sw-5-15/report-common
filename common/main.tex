@@ -1,14 +1,18 @@
 \documentclass[a4paper]{report}
+\usepackage{babel}[english]
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{graphicx,wrapfig,lipsum}
+\usepackage{dirtytalk}
+\usepackage{tikz}
+\input{common/tikz_stuff}
 \graphicspath{./figures/}
 \bibliographystyle{plain}
 
 \begin{document}
 \tableofcontents
-
+\input{common/macros}
 \input{common/ecdar/ecdar}
 \input{common/ecdar/architecture}
 \input{common/ecdar/state}
@@ -19,6 +23,7 @@
 \input{common/collaboration/collaboration}
 \input{common/collaboration/organization}
 \input{common/collaboration/scrum-of-scrums}
+\input{common/collaboration/definition-of-done.tex}
 \input{common/collaboration/tools}
 
 
