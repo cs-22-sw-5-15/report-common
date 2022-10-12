@@ -1,4 +1,4 @@
-\subsection{The Current State of ECDAR}\label{sub:the-current-state-of-ecdar} %This was written quite fastly ;)
+\subsection{The Current State of ECDAR}\label{sub:the-current-state-of-ecdar} 
 
 The GUI is split up into three vertical panes, as seen in \autoref{fig:ECDAR-gui}. The different components in the project are listed in the project pane to the left, the currently selected component is shown in the editor pane in the middle, and the queries are found in the query pane to the right.
 The GUI also has a top bar, from where it is possible to open a project, hide panes, choose engine options, and more.  
@@ -40,21 +40,7 @@ An example of an invariant can be seen in \autoref{fig:ECDAR-guard} as a text bo
 \subsubsection{Query Pane}
 The query pane has a top bar in which a query can be added using the plus symbol and by clicking the play symbol all queries can be run at the same time. Additionally, the icon next to the play icon will clear all queries. Queries are the operations that can be performed on the components. There are different types of queries and these can be seen in \autoref{tab:querytypes}. 
 
-\begin{table}[H]
-\begin{tabular}{ll}
-\textbf{Query Type} & \textbf{Description} \\
-reachability [E$<>$]     & x                    \\
-refinement [$\leq$]      & x                    \\
-quotient [\textbackslash]& x                    \\
-specification [Spec]     & x                    \\
-implementation [Imp]     & x                    \\
-consistency [lCon]       & x                    \\
-global-consistency [gCon]& x                    \\
-bisim [bsim]             & x                    \\
-get-component [get]      & x                    \\
-\end{tabular}
-\caption{\label{tab:querytypes}Table describing the different query types. The functionality of every query type is currently not implemented.}
-\end{table}
+
 
 Below the top bar in the query pane all the added queries can be seen. A query consists of a query request specified in the text-field, a query type chosen using the drop-down underneath the icon, and a backend engine. 
 Queries are sent to one of the two engines, which can be selected in the drop-down menu to the right of a query. 

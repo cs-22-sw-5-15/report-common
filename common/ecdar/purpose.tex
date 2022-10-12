@@ -1,7 +1,7 @@
 \subsection{Model Checking in ECDAR}
 ECDAR currently combines a graphical user interface for modelling real-time systems using timed input/output automata with a model checking engine. Currently ECDAR has two verification engines: j-ecdar and Reveaal, that is written in java and rust respectively.
 
-ECDAR strive to help check if different models match given a specification. ECDAR will check 
+ECDAR combines componenents, using operators and checks if it satisfies a specifications.
 
 \todo{more about ecdar}
 
@@ -12,3 +12,19 @@ ECDAR strive to help check if different models match given a specification. ECDA
 
 
 This section will go over the ECDAR tool, to further illustrate the intent of ECDAR and how far it has been developed. The GUI of ECDAR 2.3.3 can be seen in \autoref{fig:ECDAR-gui}.
+
+\begin{table}[H]
+\begin{tabular}{ll}
+\textbf{Query Type} & \textbf{Description} \\
+reachability [E$<>$]     & x                    \\
+refinement [$\leq$]      & x                    \\
+quotient [\textbackslash]& x                    \\
+specification [Spec]     & x                    \\
+implementation [Imp]     & x                    \\
+consistency [lCon]       &                    \\
+global-consistency [gCon]& x                    \\
+bisim [bsim]             & x                    \\
+get-component [get]      & x                    \\
+\end{tabular}
+\caption{\label{tab:querytypes}Table describing the different query types. The functionality of every query type is currently not implemented.}
+\end{table}

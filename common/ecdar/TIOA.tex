@@ -1,59 +1,28 @@
 \subsection{Timed Input/Output Automata}\label{sec:TIOA}
-\emph{Timed Input/Output Automata}, abbreviated to TIOA, are basic automata with two extensions \cite{ecdartheory}. One of them being the notion of time. Time is tracked using clock variables, which can be used to make conditions on the system being in a location or performing an action. The second is having actions classified as either input or output actions. Input actions triggers from the outside, where output actions triggers from within. 
+\emph{Timed Input/Output Automata}, abbreviated to TIOA, are basic automata with two extensions \cite{ecdartheory}. One of them is the notion of time. Time is tracked using clock variables, which can be used to make conditions on the system being in a location or performing an action. The second is having actions classified as either input or output actions. Input actions triggers from the outside, where output actions triggers from within. 
 
-The formal definition of a TIOA is a tuple \cite{ecdartheory} $$(Loc, I_{0}, Act, Clk, E, Inv)$$  
-where:
+The formal definition of a TIOA is a tuple \cite{ecdartheory} $(Loc, I_{0}, Act, Clk, E, Inv)$
+where
 
 \begin{itemize}
-    \item $Loc$ is a finite set of locations.
-    \item $i_{0}$ is the initial location, so $i_{0} \in Loc$.
-    \item $Act$ is a finite set of actions partitioned into inputs ($Act_{i}$) and outputs ($Act_{o}$).
-    \item $Clk$ is a finite set of clocks.
-    \item $E \subseteq Loc \times Act \times \mathcal{G} \times \mathcal{U} \times Loc$ is a set of edges.
-    \item $Inv : Loc \mapsto \mathcal{B}(Clk)$ is a location invariant function. 
+    \item $Loc$ is a finite set of locations,
+    \item $(i_{0})$ is the initial location, so $i_{0} \in Loc$,
+    \item $Act$ is a finite set of actions partitioned into inputs ($Act_{i}$) and outputs ($Act_{o}$),
+    \item $Clk$ is a finite set of clocks,
+    \item $E \subseteq Loc \times Act \times \mathcal{B}(Clk) \times \mathcal{P}(Clk) \times Loc$ is a set of edges, where $\mathcal{B}(Clk)$ is the set of guards over the operations in the set $\{<, \leq, >, \geq\}$ and $\mathcal{P}(Clk)$ is the powerset of $Clk$,
+    \item $Inv : Loc \mapsto \mathcal{B}(Clk)$ is a location invariant function.
 \end{itemize}
 
-\subsection{Timed Input/Output Transistion Systems}\label{sec:TIOTS}
+\subsection{Timed Input/Output Transistion System}\label{sec:TIOTS}
 
-\emph{Timed Input/Output Transistion System}, TIOTS, is the semantic representation of TIOA and is used to analyze them, to ensure their correctness. TIOA are finite representations of TIOTS \cite{}. A TIOTS is a tuple \cite{}  $$(Q, q_{0}, Act, \rightarrow)$$
-
-where:
+\emph{Timed Input/Output Transistion System}, TIOTS, is the semantic representation of TIOA and is used to analyze TIOAs, to ensure their correctness. TIOA are finite representations of TIOTS\cite{ecdartheory}. A TIOTS is a tuple\cite{ecdartheory}  $(Q, q_{0}, Act, \rightarrow)$ where
 
 \begin{itemize}
-    \item $Q$ is a possibly infinite set of states.
-    \item $q_{0}$ is the initial location, so $q_{0} \in Q$.
-    \item $Act$ is a finite set of actions partitioned into inputs ($Act_{i}$) and outputs ($Act_{o}$).
-    \item $\rightarrow \subseteq Q \times (Act \times \mathbb{R}_{\geq 0}) \times Q$ is a transition relation.
-\end{itemize}
-
-\subsubsection{Specification}
-A TIOTS is a specification if all of it states are input enabled, this means that if $\forall i? \in Act_i : \exists q' \in Q$ which means that each state in a TIOA should be able to take input, at any time. i.e. $q \rightarrow^{i?} q'$\cite{}
-\emph{Timed Input/Output Automata}, abbreviated to TIOA, are basic automata with two extensions \cite{ecdartheory}. One of them being the notion of time. Time is tracked using clock variables, which can be used to make conditions on the system being in a location or performing an action. The second is having actions classified as either input or output actions. Input actions triggers from the outside, where output actions triggers from within. 
-
-The formal definition of a TIOA is a tuple \cite{ecdartheory} $$(Loc, I_{0}, Act, Clk, E, Inv)$$  
-where:
-
-\begin{itemize}
-    \item $Loc$ is a finite set of locations.
-    \item $i_{0}$ is the initial location, so $i_{0} \in Loc$.
-    \item $Act$ is a finite set of actions partitioned into inputs ($Act_{i}$) and outputs ($Act_{o}$).
-    \item $Clk$ is a finite set of clocks.
-    \item $E \subseteq Loc \times Act \times \mathcal{G} \times \mathcal{U} \times Loc$ is a set of edges.
-    \item $Inv : Loc \mapsto \mathcal{B}(Clk)$ is a location invariant function. 
-\end{itemize}
-
-\subsection{Timed Input/Output Transistion Systems}\label{sec:TIOTS}
-
-\emph{Timed Input/Output Transistion System}, TIOTS, is the semantic representation of TIOA and is used to analyze them, to ensure their correctness. TIOA are finite representations of TIOTS \cite{}. A TIOTS is a tuple \cite{}  $$(Q, q_{0}, Act, \rightarrow)$$
-
-where:
-
-\begin{itemize}
-    \item $Q$ is a possibly infinite set of states.
-    \item $q_{0}$ is the initial location, so $q_{0} \in Q$.
-    \item $Act$ is a finite set of actions partitioned into inputs ($Act_{i}$) and outputs ($Act_{o}$).
-    \item $\rightarrow \subseteq Q \times (Act \times \mathbb{R}_{\geq 0}) \times Q$ is a transition relation.
+    \item $Q$ is a possibly infinite set of states,
+    \item $q_{0}$ is the initial location, so $q_{0} \in Q$,
+    \item $Act$ is a finite set of actions partitioned into inputs ($Act_{i}$) and outputs ($Act_{o}$),
+    \item $\rightarrow \subseteq Q \times (Act \cup \mathbb{R}_{\geq 0}) \times Q$ is a transition relation.
 \end{itemize}
 
 \subsubsection{Specification}
-A TIOTS is a specification if all of it states are input enabled, this means that if $\forall i? \in Act_i : \exists q' \in Q$ which means that each state in a TIOA should be able to take input, at any time. i.e. $q \rightarrow^{i?} q'$\cite{}
+A TIOTS is a specification if all of it states are input enabled. So, $\forall i? \in Act_i : \exists q' \in Q$ such that $q \rightarrow i? q'$, which means that each state in a TIOA should be able to receive an input, at any time. \cite{ecdartheory}
