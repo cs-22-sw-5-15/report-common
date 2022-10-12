@@ -1,39 +1,6 @@
-\section{Introduction to ECDAR}\label{sec:introduction-to-ecdar}
-\commondisclaimer
-
-
-ECDAR (\textbf{E}nvironment for \textbf{C}ompositional \textbf{D}esign and \textbf{A}nalysis of \textbf{R}eal Time Systems.)
- is a tool for model checking \cite{ecdartheory} which is a form of computer aided varification \cite{modelchecking_handbook}.
-Systems nowadays are big and complex and consists of multiple components designed by independent teams \cite{ecdartheory}. 
-Also, systems may be critical, meaning that their reliability is extremely important. 
-To ensure this high level of reliability, it is nessecary to ensure that the system matches its specification.
-This is called model checking.
-\todo{The definition of model checking}
-To illustrate the importance of model checking, consider the following example:
-
-Imagine for a moment that you are working for a space agency and your mission is to send a satellite into space.
-You have spent several months testing the satellite to make sure it is correct and everything is working as intended.
-All tests have passed for every edge case your engineers could think of.
-The satelite is ready and for launch.
-The day after launch however, a major problem in the system is found. 
-It will need to be fixed if the satelite is to have any use, but doing so might be extremely expensive or outright impossible.
-
-As the model grows in size, it becomes ever more complex to verify by hand.
-The immense complexity of modern systems dictates that the verification must be computer aided in order to be feasible \cite{modelchecking_handbook}. ECDAR is one such tool
-
-ECDAR currently combines a graphical user interface for modelling real-time systems using timed input/output automata with a model checking engine.
-
-\todo{more about ecdar}
-%Also how efficient ECDAR is as a tool is dependent on what kind of algorithms are used, and the efficiency of the run-time.
-
-%%ECDAR therefore tests the correctness of the model using timed I/O automata.
-%% It parallelizes test-case generation and test execution to provide this significant speed-up.
-
-%To sum up, what the purpose of ECDAR is:
-%\begin{quote}
-%"[to integrate] conformance testing into a new IDE that now features modelling, verification, and testing. The new tool uses model-based mutation testing, requiring only the model and the system under test, to locate faults and to prove the absence of certain types of faults." \cite{Gundersen_2018}
-%\end{quote}
-
-
-
-
+\input{common/ecdar/intro}
+\input{common/ecdar/model-checking}
+\input{common/ecdar/purpose}
+\input{common/ecdar/TIOA}
+\input{common/ecdar/architecture}
+\input{common/ecdar/state}
